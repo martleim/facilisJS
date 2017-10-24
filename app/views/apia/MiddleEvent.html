@@ -1,0 +1,73 @@
+<div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Attached
+		</div>
+		<div>
+			<select name="attached" ng-model="selectedElement.attached"><option  selected  value="TRUE">TRUE</option><option  value="FALSE">FALSE</option></select>
+		<div>
+	</div>TRUE
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Documentación
+		</div>
+		<div>
+			<input name="documentation" ng-model="selectedElement.documentation"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Nombre
+		</div>
+		<div>
+			<input name="name" ng-model="selectedElement.name"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			EventType
+		</div>
+		<div>
+			<input name="eventtype" ng-model="selectedElement.eventtype"></input>
+		<div>
+	</div>Intermediate
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Tipo
+		</div>
+		<div>
+			<select name="eventdetailtype" ng-model="selectedElement.eventdetailtype"><option  selected  value="None">None</option><option  value="Message">Message</option><option  value="Timer">Timer</option><option  value="Signal">Signal</option><option  value="Multiple">Multiple</option><option  value="Error">Error</option></select>
+		<div>
+	</div>None
+	<div class="row" ng-show="selectedElement.attached=='TRUE' && selectedElement.attached=='FALSE' && selectedElement.eventdetailtype=='Message'" ng-hide="selectedElement.attached=='TRUE' && selectedElement.attached=='FALSE' && selectedElement.eventdetailtype=='None' && selectedElement.eventdetailtype=='Timer' && selectedElement.eventdetailtype=='Signal' && selectedElement.eventdetailtype=='Multiple' && selectedElement.eventdetailtype=='Error'">
+		<div class="col-md-2">
+			Message
+		</div>
+		<div>
+			<input name="message" ng-model="selectedElement.message"></input>
+		<div>
+	</div>{}; ////Message
+	<div class="row" ng-show="selectedElement.eventdetailtype=='Timer'" ng-hide="selectedElement.eventdetailtype=='None' && selectedElement.eventdetailtype=='Message' && selectedElement.eventdetailtype=='Signal' && selectedElement.eventdetailtype=='Multiple' && selectedElement.eventdetailtype=='Error'">
+		<div class="col-md-2">
+			Timer
+		</div>
+		<div>
+			<input name="timer" ng-model="selectedElement.timer"></input>
+		<div>
+	</div>{}; ////Timer
+	<div class="row" ng-show="selectedElement.eventdetailtype=='Multiple'" ng-hide="selectedElement.eventdetailtype=='None' && selectedElement.eventdetailtype=='Message' && selectedElement.eventdetailtype=='Timer' && selectedElement.eventdetailtype=='Signal' && selectedElement.eventdetailtype=='Error'">
+		<div class="col-md-2">
+			Multiple
+		</div>
+		<div>
+			<input name="multiple" ng-model="selectedElement.multiple"></input>
+		<div>
+	</div>{}; ////Multiple
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			User Attributes
+		</div>
+		<div>
+			<input name="userattributes" ng-model="selectedElement.userattributes"></input>
+		<div>
+	</div><div></div></div>

@@ -1,0 +1,250 @@
+<div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Documentación
+		</div>
+		<div>
+			<input name="documentation" ng-model="selectedElement.documentation"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Nombre
+		</div>
+		<div>
+			<!--select name="nameChooser" ng-model="selectedElement.nameChooser"><option  selected  value="DEFAULT_TASK">undefined</option></select-->
+			<input name="nameChooser" ng-model="selectedElement.nameChooser"></input>
+		<div>
+	</div>DEFAULT_TASK
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			StartQuantity
+		</div>
+		<div>
+			<input name="startquantity" ng-model="selectedElement.startquantity"></input>
+		<div>
+	</div>"1"
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			CompletionQuantity
+		</div>
+		<div>
+			<input name="completionquantity" ng-model="selectedElement.completionquantity"></input>
+		<div>
+	</div>"1"
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			CompletionQuantity
+		</div>
+		<div>
+			<input name="completionquantity" ng-model="selectedElement.completionquantity"></input>
+		<div>
+	</div>"1"
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			ActivityType
+		</div>
+		<div>
+			<input name="activitytype" ng-model="selectedElement.activitytype"></input>
+		<div>
+	</div>Task
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual'" ng-hide="selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Grupo
+		</div>
+		<div>
+			<input name="performers" ng-model="selectedElement.performers"></input>
+		<div>
+	</div><div></div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Grupo
+		</div>
+		<div>
+			<input name="hiddenperformers" ng-model="selectedElement.hiddenperformers"></input>
+		<div>
+	</div><div></div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Tipo de tarea
+		</div>
+		<div>
+			<select name="taskType" ng-model="selectedElement.taskType"><option  value="None">None</option><option  value="Service">Service</option><option  value="Receive">Receive</option><option  value="Send">Send</option><option  selected  value="User">User</option><option  value="Manual">Manual</option><option  value="Script">Script</option></select>
+		<div>
+	</div>User
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='Send' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual' && selectedElement.taskType=='Script'" ng-hide="selectedElement.taskType=='Service' && selectedElement.taskType=='Receive'">
+		<div class="col-md-2">
+			Tipo de Loop
+		</div>
+		<div>
+			<select name="looptype" ng-model="selectedElement.looptype"><option  selected  value="None">None</option><option  value="MultiInstance">MultiInstance</option></select>
+		<div>
+	</div>None
+	<div class="row" ng-show="selectedElement.looptype=='MultiInstance'" ng-hide="selectedElement.looptype=='None'">
+		<div class="col-md-2">
+			Multiplicación
+		</div>
+		<div>
+			<input name="mi_condition" ng-model="selectedElement.mi_condition"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance'">
+		<div class="col-md-2">
+			LoopCounter
+		</div>
+		<div>
+			<input name="loopcounter" ng-model="selectedElement.loopcounter"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance'">
+		<div class="col-md-2">
+			LoopMaximum
+		</div>
+		<div>
+			<input name="loopmaximum" ng-model="selectedElement.loopmaximum"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance'">
+		<div class="col-md-2">
+			TestTime
+		</div>
+		<div>
+			<select name="testtime" ng-model="selectedElement.testtime"><option  selected  value="After">After</option><option  value="Before">Before</option></select>
+		<div>
+	</div>"After"
+	<div class="row" ng-show="selectedElement.looptype=='MultiInstance'" ng-hide="selectedElement.looptype=='None'">
+		<div class="col-md-2">
+			MI_Ordering
+		</div>
+		<div>
+			<select name="mi_ordering" ng-model="selectedElement.mi_ordering"><option  selected  value="Parallel">Parallel</option><option  value="Sequential">Sequential</option></select>
+		<div>
+	</div>"Parallel"
+	<div class="row" ng-show="selectedElement.mi_ordering=='Parallel' && selectedElement.mi_flowcondition=='Complex'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance' && selectedElement.mi_ordering=='Parallel' && selectedElement.mi_ordering=='Sequential' && selectedElement.mi_flowcondition=='All' && selectedElement.mi_flowcondition=='One'">
+		<div class="col-md-2">
+			MI_FlowCondition
+		</div>
+		<div>
+			<select name="mi_flowcondition" ng-model="selectedElement.mi_flowcondition"><option  selected  value="All">All</option><option  value="One">One</option><option  value="Complex">Complex</option></select>
+		<div>
+	</div>"All"
+	<div class="row" ng-show="selectedElement.mi_flowcondition=='Complex'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance' && selectedElement.mi_ordering=='Parallel' && selectedElement.mi_ordering=='Sequential' && selectedElement.mi_flowcondition=='All' && selectedElement.mi_flowcondition=='One'">
+		<div class="col-md-2">
+			ComplexMI_FlowCondition
+		</div>
+		<div>
+			<input name="complexmi_flowcondition" ng-model="selectedElement.complexmi_flowcondition"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="selectedElement.taskType=='User'" ng-hide="selectedElement.taskType=='None' && selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='Manual' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Usuario
+		</div>
+		<div>
+			<input name="user" ng-model="selectedElement.user"></input>
+		<div>
+	</div>{}; ////User
+	<div class="row" ng-show="selectedElement.taskType=='Service'" ng-hide="selectedElement.taskType=='None' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Service
+		</div>
+		<div>
+			<input name="service" ng-model="selectedElement.service"></input>
+		<div>
+	</div>{}; ////Service
+	<div class="row" ng-show="selectedElement.taskType=='Receive'" ng-hide="selectedElement.taskType=='None' && selectedElement.taskType=='Service' && selectedElement.taskType=='Send' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Receive
+		</div>
+		<div>
+			<input name="receive" ng-model="selectedElement.receive"></input>
+		<div>
+	</div>{}; ////Receive
+	<div class="row" ng-show="selectedElement.taskType=='Send'" ng-hide="selectedElement.taskType=='None' && selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Send
+		</div>
+		<div>
+			<input name="send" ng-model="selectedElement.send"></input>
+		<div>
+	</div>{}; ////Send
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			FirstTask
+		</div>
+		<div>
+			<input name="firsttask" ng-model="selectedElement.firsttask"></input>
+		<div>
+	</div>"false"
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual'" ng-hide="selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Rol
+		</div>
+		<div>
+			<input name="role" ng-model="selectedElement.role"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual'" ng-hide="selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Formularios
+		</div>
+		<div>
+			<input name="steps" ng-model="selectedElement.steps"></input>
+		<div>
+	</div><div></div>
+	<div class="row" ng-show="selectedElement.taskType=='Script'" ng-hide="">
+		<div class="col-md-2">
+			Eventos
+		</div>
+		<div>
+			<input name="bussinessclasses" ng-model="selectedElement.bussinessclasses"></input>
+		<div>
+	</div><div></div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Estados
+		</div>
+		<div>
+			<input name="taskstates" ng-model="selectedElement.taskstates"></input>
+		<div>
+	</div><div></div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			ProEleId
+		</div>
+		<div>
+			<input name="proeleid" ng-model="selectedElement.proeleid"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Resaltar comentarios
+		</div>
+		<div>
+			<input name="highlightcomments" ng-model="selectedElement.highlightcomments"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Agenda
+		</div>
+		<div>
+			<select name="scheduledTask" ng-model="selectedElement.scheduledTask"><option  selected  value="undefined">undefined</option></select>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Condición para saltear
+		</div>
+		<div>
+			<input name="skipcondition" ng-model="selectedElement.skipcondition"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			User Attributes
+		</div>
+		<div>
+			<input name="userattributes" ng-model="selectedElement.userattributes"></input>
+		<div>
+	</div><div></div></div>

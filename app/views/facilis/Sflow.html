@@ -1,0 +1,41 @@
+<div>
+	<div class="row" ng-show="selectedElement.conditiontype=='CONDITION'" ng-hide="selectedElement.conditiontype=='None'">
+		<div class="col-md-2">
+			Documentation
+		</div>
+		<div>
+			<input name="documentation" ng-model="selectedElement.documentation"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Name
+		</div>
+		<div>
+			<input name="name" ng-model="selectedElement.name"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			ConditionType
+		</div>
+		<div>
+			<select name="conditiontype" ng-model="selectedElement.conditiontype"><option  value="CONDITION">Expression</option><option  selected  value="None">None</option><option  value="OTHERWISE">Default</option></select>
+		</div>
+	</div>None
+	<div class="row" ng-show="selectedElement.conditiontype=='CONDITION'" ng-hide="selectedElement.conditiontype=='None' && selectedElement.conditiontype=='OTHERWISE'">
+		<div class="col-md-2">
+			ConditionExpression
+		</div>
+		<div>
+			<input name="conditionexpression" ng-model="selectedElement.conditionexpression"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Apia Type
+		</div>
+		<div>
+			<select name="apiatype" ng-model="selectedElement.apiatype"><option  selected  value="None">None</option><option  value="Wizard">Wizard</option><option  value="Loopback">Loopback</option></select>
+		</div>
+	</div>None</div>

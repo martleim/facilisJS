@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <!--script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="libs/jquery.ui.touch-punch.min.js"></script>
+        
+        <!-- Latest compiled and minified CSS 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen">
+        <!-- Optional theme 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" media="screen">
+        <!-- Latest compiled and minified JavaScript 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        -->
+        <!--script src="http://code.createjs.com/createjs-2014.12.12.min.js"></script-->
+        <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+        
+		<link rel="stylesheet" href="facilis.css" />
+		
+        <!--script src="libs/jspdf/require.js"></script-->
+        <script src="libs/jspdf/jspdf.js"></script>
+        <script src="libs/rasterize/rasterizeHTML.allinone.js"></script>
+        
+		<script src="bin/facilis_JS.js"></script>
+		<script src="bin/facilis_JS.validation.js"></script>
+		<script src="bin/facilis_JS.facilisModel.js"></script>
+        <script src="bin/facilis_JS.parsers.js"></script>
+        <script src="bin/facilis_JS.documentation.js"></script>
+        <script src="bin/facilis_JS.game.js"></script>
+        
+        <script src="facilis.js"></script>
+		
+		<!-- angular -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/providers/facilisConfig.js"></script>
+		
+		<script src="app/services/facilisService.js"></script>
+		<script src="app/controllers/elementPropertiesController.js"></script>
+		<script src="app/controllers/fileActionsController.js"></script>
+		
+		<script src="app/directives/fileActions.js"></script>
+		<script src="app/directives/elementProperties.js"></script>
+		        
+        <style>
+        
+            @-moz-document url-prefix() {
+                canvas {
+                    background-color: white;
+                }
+            }
+            
+        </style>
+
+    </head>
+    <body onload="init()" style="overflow:hidden"  ng-app="facilisApp">
+    
+        <canvas id="facilisCanvas" width="1000" height="600"></canvas>
+        <fileactions></fileactions>
+		<elementproperties ng-controller="ElementPropertiesController"></elementproperties>
+    </body>
+</html>

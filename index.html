@@ -1,0 +1,335 @@
+<html>
+    <head>
+    
+        <script src="http://code.createjs.com/createjs-2015.05.21.min.js"></script>
+        
+        
+        <script src="src/facilis.js"></script>
+        
+        
+        <script src="src/wrappers/easeljs/Ticker.js"></script>
+        <script src="src/wrappers/easeljs/Event.js"></script>
+        <script src="src/wrappers/easeljs/EventDispatcher.js"></script>
+        <script src="src/wrappers/easeljs/Point.js"></script>
+        <script src="src/wrappers/easeljs/Container.js"></script>
+        <script src="src/wrappers/easeljs/Shape.js"></script>
+        <script src="src/wrappers/easeljs/Rectangle.js"></script>
+        <script src="src/wrappers/easeljs/Sprite.js"></script>
+        <script src="src/wrappers/easeljs/SpriteSheet.js"></script>
+        <script src="src/wrappers/easeljs/Graphics.js"></script>
+        <script src="src/wrappers/easeljs/Shadow.js"></script>
+        <script src="src/wrappers/easeljs/Text.js"></script>
+        
+        
+        <script src="src/view/BaseElement.js"></script>
+        
+        <script src="src/utils/Key.js"></script>
+        
+        <script src="src/view/IconManager.js"></script>
+        
+        <script src="src/view/elements/AbstractElement.js"></script>
+        <script src="src/view/elements/SizableElement.js"></script>
+        <script src="src/view/elements/Drag.js"></script>
+        <script src="src/view/elements/Sizer.js"></script>
+        <script src="src/view/elements/Sizable.js"></script>
+        <script src="src/view/elements/Element.js"></script>
+        <script src="src/view/elements/DropInElement.js"></script>
+        
+        <script src="src/view/ElementAttributeController.js"></script>
+        <script src="src/view/MultiSelect.js"></script>
+        
+        <script src="src/view/AbstractView.js"></script>
+        <script src="src/view/ElementView.js"></script>
+        <script src="src/view/LaneView.js"></script>
+        <script src="src/view/LineView.js"></script>
+        <script src="src/view/AbstractMainView.js"></script>
+        <script src="src/view/ScrollContent.js"></script>
+        <script src="src/view/View.js"></script>
+        <script src="src/view/ZoomScroll.js"></script>
+		<script src="src/view/ModelDrawer.js"></script>
+        
+		<script src="src/validation/rules/AbstractRule.js"></script>
+		<script src="src/validation/rules/ConnectionRule.js"></script>
+		<script src="src/validation/rules/DropRule.js"></script>
+		<script src="src/validation/rules/DropInRule.js"></script>		
+        <script src="src/validation/RuleManager.js"></script>
+        
+		<script src="src/view/elements/ElementText.js"></script>
+        
+        <script src="src/view/elements/lanes/LaneSizers.js"></script>
+        <script src="src/view/elements/lanes/AbstractLane.js"></script>
+        <script src="src/view/elements/lanes/PoolLane.js"></script>
+        <script src="src/view/elements/lanes/SwimLane.js"></script>
+        
+        <script src="src/view/elements/activities/ActivityElement.js"></script>
+        <script src="src/view/elements/activities/FlowElement.js"></script>
+        
+        <script src="src/view/elements/activities/TaskElement.js"></script>
+        <script src="src/view/elements/activities/CSubFlowElement.js"></script>
+        
+        
+        <script src="src/view/elements/events/EventElement.js"></script>
+        <script src="src/view/elements/events/StartEventElement.js"></script>
+        <script src="src/view/elements/events/MiddleEventElement.js"></script>
+        <script src="src/view/elements/events/EndEventElement.js"></script>
+        
+        <script src="src/view/elements/gateways/GatewayElement.js"></script>
+        
+        <script src="src/view/elements/artifacts/DataObject.js"></script>
+        <script src="src/view/elements/artifacts/TextAnnotation.js"></script>
+		<script src="src/view/elements/artifacts/DataInput.js"></script>
+		<script src="src/view/elements/artifacts/DataObject.js"></script>
+		<script src="src/view/elements/artifacts/DataOutput.js"></script>
+		<script src="src/view/elements/artifacts/DataStore.js"></script>
+        
+        <script src="src/utils/DashLine.js"></script>
+        <script src="src/utils/LineUtils.js"></script>
+        <script src="src/view/elements/line/LineObject.js"></script>
+        <script src="src/view/elements/line/LineSegment.js"></script>
+        <script src="src/view/elements/line/LineVertex.js"></script>
+        
+        <script src="src/parsers/input/ParserIn.js"></script>
+        <script src="src/parsers/input/elements/ElementParser.js"></script>
+        
+        <script src="src/parsers/input/elements/Activity.js"></script>
+        <script src="src/parsers/input/elements/ActivityElement.js"></script>
+        <script src="src/parsers/input/elements/Artifact.js"></script>
+        <script src="src/parsers/input/elements/Association.js"></script>
+        <script src="src/parsers/input/elements/Lane.js"></script>
+        <script src="src/parsers/input/elements/Gateway.js"></script>
+        <script src="src/parsers/input/elements/Pool.js"></script>
+        <script src="src/parsers/input/elements/Subflow.js"></script>
+        <script src="src/parsers/input/elements/Back.js"></script>
+        <script src="src/parsers/input/elements/Event.js"></script>
+        <script src="src/parsers/input/elements/Task.js"></script>
+        <script src="src/parsers/input/elements/WorkflowProcess.js"></script>
+        <script src="src/parsers/input/elements/Line.js"></script>
+        <script src="src/parsers/input/elements/Transition.js"></script>
+        
+        <script src="src/controller/resources/AbstractResourceController.js"></script>
+        <script src="src/controller/resources/FormResources.js"></script>
+        
+        
+        <script src="src/labels/LabelManager.js"></script>
+        <script src="src/labels/LabelSet.js"></script>
+        
+        <script src="src/documentation/FacilisPDF.js"></script>
+        <script src="src/documentation/AbstractDocumentator.js"></script>
+        <script src="src/documentation/PdfDocumentGenerator.js"></script>
+        
+        <script>
+          function isIE(userAgent) {
+              userAgent = userAgent || navigator.userAgent;
+              return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1;
+            }            
+            function init(){
+                if(isIE()){
+
+                    function setExtensions(p){
+                        Object.defineProperty(p,"children",{
+                            get:function(){
+
+                                var c=[];
+                                for(var i=0;i<this.childNodes.length;i++){
+                                    if(this.childNodes[i].nodeType==1)
+                                        c.push(this.childNodes[i]);
+                                }
+                                return c;
+                            }
+                        });
+
+                        Object.defineProperty(p,"outerHTML",{
+
+                            get:function(){
+                                var div=document.createElement("div");
+                                div.appendChild(this.cloneNode(true));
+                                return div.innerHTML;
+                            }
+
+                        });
+
+                        Object.defineProperty(p,"firstElementChild",{
+
+                            get:function(){
+                                return this.children[0];
+                            }
+
+                        });
+                    }
+                    setExtensions(XMLDocument.prototype);
+                    setExtensions(Element.prototype);
+                }
+            document.getElementById("demoCanvas").width = window.innerWidth-30;
+            document.getElementById("demoCanvas").height = window.innerHeight-30; 
+            var stage = new createjs.Stage("demoCanvas");
+              
+            
+            //var stage = new createjs.SpriteStage("demoCanvas",false,false);
+            stage.enableMouseOver();
+            stage.mouseMoveOutside = true;
+            createjs.Touch.enable(stage);
+              
+              facilis.ElementAttributeController.getInstance();
+              facilis.IconManager.getInstance();
+              
+              stage.addChild(facilis.View.getInstance());
+              
+              facilis.View.getInstance().init(stage);
+              
+              facilis.ElementAttributeController.getInstance();
+              
+              setTimeout(function(){
+                //e._sizableElement.typeChange("Send");
+                  //facilis.View.getInstance().loadModel("extras/grande.xpdl");
+                  facilis.View.getInstance().loadModel("xpdls/1. Alta funcionario_VALIDAR_v01.xpdl");
+                  
+                  stage.update();  
+            
+                    createjs.Ticker.on("tick", stage);
+                  
+              },1200);
+              return;
+              
+              setTimeout(function(){
+                    var le=new facilis.Element(facilis.PoolLane);   
+                    le.elementType = "pool";
+                    facilis.View.getInstance().getLaneView().addElement(le);
+                    //e.setSizableElement(new ActivityElement);*/
+                  le.getElement().setName("POOL");
+                    le.x=300;
+                    le.y=300;
+                    le.setSize(300,300);
+                  
+                  
+                  var lel=new facilis.Element(facilis.SwimLane);   
+                    lel.elementType = "swimlane";
+                    facilis.View.getInstance().getLaneView().addElement(lel);
+                    lel.getElement().setName("Lane");
+                  
+                  var lel2=new facilis.Element(facilis.SwimLane);   
+                    lel2.elementType = "swimlane";
+                    facilis.View.getInstance().getLaneView().addElement(lel2);
+                    lel2.getElement().setName("Lane 2");
+                    
+                  le.getElement().addInnerElement(lel);  
+                  le.getElement().addInnerElement(lel2);
+                  
+
+                    stage.update();  
+
+                    createjs.Ticker.on("tick", stage);
+                  
+              },1200);
+              
+              
+              return;
+              
+              var elements=new createjs.Container();
+              var lines=new createjs.Container();
+              stage.addChild(lines);
+              stage.addChild(elements);
+              
+              
+              
+              
+              var le=new facilis.Element(facilis.PoolLane);   
+            facilis.View.getInstance().getElementView().addElement(le);
+            //e.setSizableElement(new ActivityElement);
+            le.x=300;
+            le.y=300;
+              
+              var ev=new facilis.Element(facilis.StartEventElement);   
+            facilis.View.getInstance().getElementView().addElement(ev);
+            //e.setSizableElement(new ActivityElement);
+            ev.x=100;
+            ev.y=100;
+              
+              
+            var e=new facilis.Element(facilis.TaskElement);   
+              //var tsk=e.sizableEleemnt;
+            facilis.View.getInstance().getElementView().addElement(e);
+            //e.setSizableElement(new ActivityElement);
+            e.x=300;
+              e.y=300;
+              
+
+              
+            var e2=new facilis.Element(facilis.GatewayElement);   
+            facilis.View.getInstance().getElementView().addElement(e2);
+            //e2.setSizableElement(new facilis.ActivityElement);
+            e2.x=600;
+            e2.y=300;
+              
+              var e3=new facilis.Element(facilis.ActivityElement);   
+            facilis.View.getInstance().getElementView().addElement(e3);
+            //e3.setSizableElement(new ActivityElement);
+            e3.x=600;
+            e3.y=500;
+              
+              var ee=new facilis.Element(facilis.EndEventElement);   
+            facilis.View.getInstance().getElementView().addElement(ee);
+            //e.setSizableElement(new ActivityElement);
+            ee.x=800;
+            ee.y=500;
+              
+              var dat=new facilis.Element(facilis.DataObject);   
+            facilis.View.getInstance().getElementView().addElement(dat);
+            //e.setSizableElement(new ActivityElement);
+            dat.x=800;
+            dat.y=600;
+              
+              var ta=new facilis.Element(facilis.TextAnnotation);   
+            facilis.View.getInstance().getElementView().addElement(ta);
+            //e.setSizableElement(new ActivityElement);
+            ta.x=800;
+            ta.y=300;
+              
+              var l=new facilis.LineObject(e,e2);
+              var l2=new facilis.LineObject(e,e3);
+              var l3=new facilis.LineObject(e2,e3);
+              var l4=new facilis.LineObject(ev,e);
+              var l5=new facilis.LineObject(e3,ee);
+              
+              facilis.View.getInstance().getLineView().addElement(l);
+              facilis.View.getInstance().getLineView().addElement(l2);
+              facilis.View.getInstance().getLineView().addElement(l3);
+              facilis.View.getInstance().getLineView().addElement(l4);
+              facilis.View.getInstance().getLineView().addElement(l5);
+              
+              l.setType("dashdotted");
+                l2.setType("dashed");
+              l3.setType("dotted");
+              
+              /*var circle = new createjs.Shape();
+			circle.graphics.beginFill("red").drawCircle(0, 0, 50);
+			circle.x = 100;
+			circle.y = 100;
+			
+			circle.addEventListener("click", function(e) {
+				alert("clickedeuaaa");
+			});
+			
+			e.addChild(new facilis.ActivityElement());
+        */
+        
+              
+              
+            stage.update();  
+            /*var e2=new facilis.ActivityElement();   
+            stage.addChild(e2);
+              e2.x=320;
+              e2.y=220;
+              e2.setName("PRUEBASZZA");*/
+              
+            createjs.Ticker.on("tick", stage);
+          }
+        </script>
+        
+    </head>
+    <body onload="init()">
+    
+        <canvas id="demoCanvas" width="1000" height="600"></canvas>
+        
+        
+    </body>
+</html>

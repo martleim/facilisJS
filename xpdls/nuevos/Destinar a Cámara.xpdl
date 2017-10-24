@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="3f693e11-4c62-4f1e-9636-3254e2465d61" Name="Destinar a Cámara" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+  <PackageHeader>
+    <XPDLVersion>2.2</XPDLVersion>
+    <Vendor>Bizagi Process Modeler.</Vendor>
+    <Created>2014-05-15T13:11:43.2091235-03:00</Created>
+    <ModificationDate>2014-12-02T08:38:50.2554741-02:00</ModificationDate>
+    <Description>Destinar a Cámara</Description>
+    <Documentation />
+  </PackageHeader>
+  <RedefinableHeader>
+    <Author>Pablo Morales</Author>
+    <Version>1.0</Version>
+    <Countrykey>CO</Countrykey>
+  </RedefinableHeader>
+  <ExternalPackages />
+  <Pools>
+    <Pool Id="7aa11d66-9701-4a97-9319-e2fbeaeeb682" Name="Proceso principal" Process="132385b4-fe11-4cd5-ad79-350b56f09efe" BoundaryVisible="false">
+      <Lanes />
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="0" YCoordinate="0" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+    <Pool Id="53849866-d175-4ee1-bae2-8cdd6d737ac3" Name="Destinar a Cámara" Process="411c3cdc-cf15-453d-8068-f06b6fe42130" BoundaryVisible="true">
+      <Lanes>
+        <Lane Id="60c50948-b2ad-40ab-86f9-effc2d7586e5" Name="Presidencia AG" ParentPool="53849866-d175-4ee1-bae2-8cdd6d737ac3">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="126" Width="795" BorderColor="-11513776" FillColor="-1">
+              <Coordinates XCoordinate="50" YCoordinate="0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Lane>
+        <Lane Id="85246abd-2f18-4677-948f-ee3f8016c450" Name="Comunicaciones y Repartidos CSS" ParentPool="53849866-d175-4ee1-bae2-8cdd6d737ac3">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="189" Width="795" BorderColor="-11513776" FillColor="-1">
+              <Coordinates XCoordinate="50" YCoordinate="126" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Lane>
+      </Lanes>
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="315" Width="845" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="35" YCoordinate="30" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+  </Pools>
+  <Associations />
+  <Artifacts />
+  <WorkflowProcesses>
+    <WorkflowProcess Id="132385b4-fe11-4cd5-ad79-350b56f09efe" Name="Proceso principal">
+      <ProcessHeader>
+        <Created>2015-04-27T11:04:36.0816959-03:00</Created>
+        <Description />
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Proceso principal&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false},&quot;processProperties&quot;:{&quot;globalFormId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;summaryFormId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;mobileAccess&quot;:true}}" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+    <WorkflowProcess Id="411c3cdc-cf15-453d-8068-f06b6fe42130" Name="Ingresar Poyecto de Ley AG">
+      <ProcessHeader>
+        <Created>2015-04-27T11:04:36.2066915-03:00</Created>
+        <Description />
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <Activities>
+        <Activity Id="0e585b85-4fa1-4576-baab-95a5e197b883" Name="">
+          <Description />
+          <Event>
+            <StartEvent Trigger="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
+              <Coordinates XCoordinate="149" YCoordinate="79" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="508b5d0b-2375-4e71-8606-34703bcb1841" Name="Destinar a Cámara">
+          <Description />
+          <Implementation>
+            <Task>
+              <TaskUser Implementation="Unspecified" />
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation />
+          <InputSets>
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+          </InputSets>
+          <OutputSets>
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+          </OutputSets>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-11834615" FillColor="-6571175">
+              <Coordinates XCoordinate="214" YCoordinate="64" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;cost&quot;:0,&quot;priority&quot;:0,&quot;allowReassign&quot;:false,&quot;notify&quot;:false,&quot;isSingleton&quot;:false,&quot;mobileAccess&quot;:true}" />
+            <ExtendedAttribute Name="Formulario" />
+            <ExtendedAttribute Name="Notificar_x0020_asignación" />
+            <ExtendedAttribute Name="Permitir_x0020_reasignación" />
+            <ExtendedAttribute Name="Caducidad" Value="" />
+            <ExtendedAttribute Name="Accesibilidad_x0020_móvil" Value="" />
+            <ExtendedAttribute Name="Trámites_x0020_para_x0020_SIPXXI" Value="Table" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="3b8e75b3-3c75-4ba1-be40-4606f10abbc9" Name="Cámara Destino">
+          <Description />
+          <Route />
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="346" YCoordinate="74" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="56a675ce-ca01-4917-af81-44267993048a" Name="Generar Nota">
+          <Description />
+          <Implementation>
+            <Task>
+              <TaskUser Implementation="Unspecified" />
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation />
+          <InputSets>
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+            <InputSet />
+          </InputSets>
+          <OutputSets>
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+            <OutputSet />
+          </OutputSets>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-5814784" FillColor="-551354">
+              <Coordinates XCoordinate="426" YCoordinate="217" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;cost&quot;:0,&quot;priority&quot;:0,&quot;allowReassign&quot;:false,&quot;notify&quot;:false,&quot;isSingleton&quot;:false,&quot;mobileAccess&quot;:true}" />
+            <ExtendedAttribute Name="Formulario" />
+            <ExtendedAttribute Name="Notificar_x0020_asignación" />
+            <ExtendedAttribute Name="Permitir_x0020_reasignación" />
+            <ExtendedAttribute Name="Caducidad" Value="" />
+            <ExtendedAttribute Name="Accesibilidad_x0020_móvil" Value="" />
+            <ExtendedAttribute Name="Trámites_x0020_para_x0020_SIPXXI" Value="Table" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="7eebebe9-418e-4a45-b751-f3a0283158a5" Name="Notificar ">
+          <Description>&lt;p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"&gt;&lt;span style="color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;"&gt;Remitente: Presidencia AG&lt;/span&gt;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task>
+              <TaskSend />
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation>&lt;p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"&gt;&lt;span style="color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;"&gt;Remitente: Presidencia AG&lt;/span&gt;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-5814784" FillColor="-551354">
+              <Coordinates XCoordinate="646" YCoordinate="167" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Destinatario" Value="Presidente CRR, Secretarios CRR, Prosecretarios CRR, Director General CRR, Director General CSS, Director Legislativo CRR, Director Legislativo CSS" />
+            <ExtendedAttribute Name="Asunto" Value="Presidencia de AG destinó a CRR: [TituloAsunto]" />
+            <ExtendedAttribute Name="Cuerpo" Value="&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;Presidencia de AG remitió el siguiente Proyecto de Ley: [TituloAsunto]&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;(Adjunto: texto del Proyecto de Ley y sus antecedentes)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;&quot;&gt;&lt;span style=&quot;color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;&quot;&gt;link al caso&lt;/span&gt;&lt;/p&gt;" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="971528bf-3159-4c50-8f96-40c07a792568" Name="">
+          <Description />
+          <Route GatewayType="Inclusive" />
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="547" YCoordinate="227" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="ff502209-0708-43e3-9465-f62a6fb9eeb5" Name="">
+          <Description />
+          <Route GatewayType="Inclusive" />
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="758" YCoordinate="227" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="ad47f121-1428-432d-a831-683cdf8ac668" Name="Enviar SMS ">
+          <Description>&lt;p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"&gt;&lt;span style="color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;"&gt;texto: "Presidencia de AG remitió el siguiente Proyecto de Ley: [TituloAsunto]" + link al caso&lt;/span&gt;&lt;/p&gt;&lt;p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"&gt;&lt;span style="color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;"&gt; &lt;/span&gt;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task>
+              <TaskService />
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation>&lt;p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"&gt;&lt;span style="color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;"&gt;texto: "Presidencia de AG remitió el siguiente Proyecto de Ley: [TituloAsunto]" + link al caso&lt;/span&gt;&lt;/p&gt;&lt;p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"&gt;&lt;span style="color:#000000;background-color:transparent;font-family:Segoe UI;font-size:8pt;font-weight:normal;font-style:normal;"&gt; &lt;/span&gt;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-5814784" FillColor="-551354">
+              <Coordinates XCoordinate="648" YCoordinate="267" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;cost&quot;:0,&quot;priority&quot;:0,&quot;asynchronousBehavior&quot;:{}}" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="b7c09090-b49c-4b85-905d-b3bd7d333528" Name="">
+          <Description />
+          <Event>
+            <EndEvent Result="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
+              <Coordinates XCoordinate="811" YCoordinate="79" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="b021aa2a-f339-493c-a173-20098a0bedb5" From="0e585b85-4fa1-4576-baab-95a5e197b883" To="508b5d0b-2375-4e71-8606-34703bcb1841">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="179" YCoordinate="94" />
+              <Coordinates XCoordinate="214" YCoordinate="94" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="c5481699-3947-46a8-99c9-80f0abb2bb2b" From="508b5d0b-2375-4e71-8606-34703bcb1841" To="3b8e75b3-3c75-4ba1-be40-4606f10abbc9">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="304" YCoordinate="94" />
+              <Coordinates XCoordinate="346" YCoordinate="94" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="30a295c4-8578-4f14-bf39-2e8cf4f88c65" From="3b8e75b3-3c75-4ba1-be40-4606f10abbc9" To="56a675ce-ca01-4917-af81-44267993048a" Name="CRR">
+          <Condition Type="CONDITION">
+            <Expression />
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="366" YCoordinate="114" />
+              <Coordinates XCoordinate="366" YCoordinate="247" />
+              <Coordinates XCoordinate="426" YCoordinate="247" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="94dcfcfb-8142-40df-a8fb-47ba1e449e17" From="56a675ce-ca01-4917-af81-44267993048a" To="971528bf-3159-4c50-8f96-40c07a792568">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="516" YCoordinate="247" />
+              <Coordinates XCoordinate="547" YCoordinate="247" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="f0e3fd67-5b11-4199-9f68-59ff3dc520fe" From="ff502209-0708-43e3-9465-f62a6fb9eeb5" To="b7c09090-b49c-4b85-905d-b3bd7d333528">
+          <Condition Type="CONDITION">
+            <Expression />
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="798" YCoordinate="247" />
+              <Coordinates XCoordinate="826" YCoordinate="247" />
+              <Coordinates XCoordinate="826" YCoordinate="109" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="d1ddec1b-3e7e-4937-b165-47affb55d210" From="971528bf-3159-4c50-8f96-40c07a792568" To="7eebebe9-418e-4a45-b751-f3a0283158a5" Name="enviar mail">
+          <Condition Type="CONDITION">
+            <Expression />
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="567" YCoordinate="227" />
+              <Coordinates XCoordinate="567" YCoordinate="197" />
+              <Coordinates XCoordinate="646" YCoordinate="197" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="fc8b581d-d182-48dd-a6ca-35bfcf8d6a64" From="971528bf-3159-4c50-8f96-40c07a792568" To="ad47f121-1428-432d-a831-683cdf8ac668" Name="enviar sms">
+          <Condition Type="CONDITION">
+            <Expression />
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="567" YCoordinate="267" />
+              <Coordinates XCoordinate="567" YCoordinate="297" />
+              <Coordinates XCoordinate="648" YCoordinate="297" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="ca7b57e3-a0a8-4ddc-a7e8-8ead49b2238b" From="971528bf-3159-4c50-8f96-40c07a792568" To="ff502209-0708-43e3-9465-f62a6fb9eeb5">
+          <Condition Type="OTHERWISE" />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="587" YCoordinate="247" />
+              <Coordinates XCoordinate="758" YCoordinate="247" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="faa3b1a1-b73f-48ff-b529-4159fb61be5b" From="7eebebe9-418e-4a45-b751-f3a0283158a5" To="ff502209-0708-43e3-9465-f62a6fb9eeb5">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="736" YCoordinate="197" />
+              <Coordinates XCoordinate="778" YCoordinate="197" />
+              <Coordinates XCoordinate="778" YCoordinate="227" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="29b7ab3e-3e0f-4635-a5f7-deeda2efb919" From="ad47f121-1428-432d-a831-683cdf8ac668" To="ff502209-0708-43e3-9465-f62a6fb9eeb5">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="738" YCoordinate="297" />
+              <Coordinates XCoordinate="778" YCoordinate="297" />
+              <Coordinates XCoordinate="778" YCoordinate="267" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="2a04b42f-8177-4062-a4b5-11c9b00bcc27" From="3b8e75b3-3c75-4ba1-be40-4606f10abbc9" To="b7c09090-b49c-4b85-905d-b3bd7d333528" Name="CSS">
+          <Condition Type="CONDITION">
+            <Expression />
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="386" YCoordinate="94" />
+              <Coordinates XCoordinate="811" YCoordinate="94" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Formulario_x0020_de_x0020_consultas" />
+        <ExtendedAttribute Name="RuntimeProperties" Value="{&quot;processClassProperties&quot;:{&quot;displayName&quot;:&quot;Ingresar Poyecto de Ley AG&quot;,&quot;accessType&quot;:&quot;Process&quot;,&quot;enableAlarms&quot;:false,&quot;enableNotifications&quot;:false},&quot;processProperties&quot;:{&quot;globalFormId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;summaryFormId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;mobileAccess&quot;:true}}" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+  </WorkflowProcesses>
+  <ExtendedAttributes />
+</Package>

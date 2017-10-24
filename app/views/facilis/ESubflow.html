@@ -1,0 +1,161 @@
+<div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Documentation
+		</div>
+		<div>
+			<input name="documentation" ng-model="selectedElement.documentation"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			SubProcessType
+		</div>
+		<div>
+			<select name="subprocesstype" ng-model="selectedElement.subprocesstype"><option  selected  value="Embedded">Embedded</option><option  value="Reusable">Reusable</option></select>
+		</div>
+	</div>Embedded
+	<div class="row" ng-show="selectedElement.subprocesstype=='Reusable'" ng-hide="selectedElement.subprocesstype=='Embedded'">
+		<div class="col-md-2">
+			Execution
+		</div>
+		<div>
+			<select name="execution" ng-model="selectedElement.execution"><option  selected  value="Sync">Synchronic</option><option  value="Async">Asynchronic</option></select>
+		</div>
+	</div>Sync
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			TransactionRef
+		</div>
+		<div>
+			<input name="transactionref" ng-model="selectedElement.transactionref"></input>
+		</div>
+	</div>{}; ////Transactionref
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Name
+		</div>
+		<div>
+			<input name="name" ng-model="selectedElement.name"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			ActivityType
+		</div>
+		<div>
+			<input name="activitytype" ng-model="selectedElement.activitytype"></input>
+		</div>
+	</div>Sub-Process
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			LoopType
+		</div>
+		<div>
+			<select name="looptype" ng-model="selectedElement.looptype"><option  selected  value="None">None</option><option  value="Standard">Standard</option><option  value="MultiInstance">MultiInstance</option></select>
+		</div>
+	</div>None
+	<div class="row" ng-show="selectedElement.looptype=='Standard'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance'">
+		<div class="col-md-2">
+			LoopCondition
+		</div>
+		<div>
+			<input name="loopcondition" ng-model="selectedElement.loopcondition"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="selectedElement.looptype=='MultiInstance'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='Standard'">
+		<div class="col-md-2">
+			MI_Condition
+		</div>
+		<div>
+			<input name="mi_condition" ng-model="selectedElement.mi_condition"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="selectedElement.looptype=='Standard'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance'">
+		<div class="col-md-2">
+			LoopCounter
+		</div>
+		<div>
+			<input name="loopcounter" ng-model="selectedElement.loopcounter"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="selectedElement.looptype=='Standard'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance'">
+		<div class="col-md-2">
+			LoopMaximum
+		</div>
+		<div>
+			<input name="loopmaximum" ng-model="selectedElement.loopmaximum"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="selectedElement.looptype=='Standard'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='MultiInstance'">
+		<div class="col-md-2">
+			TestTime
+		</div>
+		<div>
+			<select name="testtime" ng-model="selectedElement.testtime"><option  selected  value="After">After</option><option  value="Before">Before</option></select>
+		</div>
+	</div>"After"
+	<div class="row" ng-show="selectedElement.looptype=='MultiInstance'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='Standard'">
+		<div class="col-md-2">
+			MI_Ordering
+		</div>
+		<div>
+			<select name="mi_ordering" ng-model="selectedElement.mi_ordering"><option  selected  value="Sequential">Sequential</option><option  value="Parallel">Parallel</option></select>
+		</div>
+	</div>"Sequential"
+	<div class="row" ng-show="selectedElement.mi_ordering=='Parallel' && selectedElement.mi_flowcondition=='Complex'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='Standard' && selectedElement.looptype=='MultiInstance' && selectedElement.mi_ordering=='Sequential' && selectedElement.mi_ordering=='Parallel' && selectedElement.mi_flowcondition=='One' && selectedElement.mi_flowcondition=='All'">
+		<div class="col-md-2">
+			MI_FlowCondition
+		</div>
+		<div>
+			<select name="mi_flowcondition" ng-model="selectedElement.mi_flowcondition"><option  value="One">One</option><option  selected  value="All">All</option><option  value="Complex">Complex</option></select>
+		</div>
+	</div>"All"
+	<div class="row" ng-show="selectedElement.mi_flowcondition=='Complex'" ng-hide="selectedElement.looptype=='None' && selectedElement.looptype=='Standard' && selectedElement.looptype=='MultiInstance' && selectedElement.mi_ordering=='Sequential' && selectedElement.mi_ordering=='Parallel' && selectedElement.mi_flowcondition=='One' && selectedElement.mi_flowcondition=='All'">
+		<div class="col-md-2">
+			ComplexMI_FlowCondition
+		</div>
+		<div>
+			<input name="complexmi_flowcondition" ng-model="selectedElement.complexmi_flowcondition"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Expanded
+		</div>
+		<div>
+			<input name="expanded" ng-model="selectedElement.expanded"></input>
+		</div>
+	</div>true
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Iterate Condition
+		</div>
+		<div>
+			<input name="iteratecondition" ng-model="selectedElement.iteratecondition"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Process Forms
+		</div>
+		<div>
+			<input name="processforms" ng-model="selectedElement.processforms"></input>
+		</div>
+	</div><div></div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Entity Forms
+		</div>
+		<div>
+			<input name="entityforms" ng-model="selectedElement.entityforms"></input>
+		</div>
+	</div><div></div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			User Attributes
+		</div>
+		<div>
+			<input name="userattributes" ng-model="selectedElement.userattributes"></input>
+		</div>
+	</div><div></div></div>

@@ -1,0 +1,57 @@
+<div>
+	<div class="row" ng-show="selectedElement.conditiontype=='CONDITION'" ng-hide="selectedElement.conditiontype=='None'">
+		<div class="col-md-2">
+			Documentación
+		</div>
+		<div>
+			<input name="conditiondocumentation" ng-model="selectedElement.conditiondocumentation"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Nombre
+		</div>
+		<div>
+			<input name="name" ng-model="selectedElement.name"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Tipo
+		</div>
+		<div>
+			<select name="conditiontype" ng-model="selectedElement.conditiontype"><option  selected  value="None">None</option><option  value="CONDITION">Expression</option></select>
+		<div>
+	</div>None
+	<div class="row" ng-show="selectedElement.conditiontype=='CONDITION'" ng-hide="selectedElement.conditiontype=='None'">
+		<div class="col-md-2">
+			Condición
+		</div>
+		<div>
+			<input name="conditionexpression" ng-model="selectedElement.conditionexpression"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Apia
+		</div>
+		<div>
+			<select name="apiatype" ng-model="selectedElement.apiatype"><option  selected  value="None">None</option><option  value="Wizard">Wizard</option><option  value="Loopback">Loopback</option></select>
+		<div>
+	</div>None
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			ExecutionOrder
+		</div>
+		<div>
+			<input name="executionorder" ng-model="selectedElement.executionorder"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			User Attributes
+		</div>
+		<div>
+			<input name="userattributes" ng-model="selectedElement.userattributes"></input>
+		<div>
+	</div><div></div></div>

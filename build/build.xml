@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+	<version>1.4.4</version>
+	<docroot>../src/</docroot>
+	<output>
+        
+        <file name="../bin/facilis_JS">
+			
+            <source>facilis.js</source>
+        
+        
+			<source>wrappers/easeljs/Ticker.js</source>
+			<source>wrappers/easeljs/Event.js</source>
+			<source>wrappers/easeljs/EventDispatcher.js</source>
+			<source>wrappers/easeljs/Point.js</source>
+			<source>wrappers/easeljs/Container.js</source>
+			<source>wrappers/easeljs/Shape.js</source>
+			<source>wrappers/easeljs/Rectangle.js</source>
+			<source>wrappers/easeljs/Sprite.js</source>
+			<source>wrappers/easeljs/SpriteSheet.js</source>
+			<source>wrappers/easeljs/Graphics.js</source>
+			<source>wrappers/easeljs/Shadow.js</source>
+			<source>wrappers/easeljs/Text.js</source>
+			
+			<source>view/BaseElement.js</source>
+			
+			<source>utils/Key.js</source>
+			
+			<source>view/IconManager.js</source>
+			
+			<source>view/elements/AbstractElement.js</source>
+			<source>view/elements/SizableElement.js</source>
+			<source>view/elements/Drag.js</source>
+			<source>view/elements/Sizer.js</source>
+			<source>view/elements/Sizable.js</source>
+			<source>view/elements/Element.js</source>
+			<source>view/elements/DropInElement.js</source>
+			
+			<source>view/ElementAttributeController.js</source>
+			<source>view/MultiSelect.js</source>
+			
+			<source>view/AbstractView.js</source>
+			<source>view/ElementView.js</source>
+			<source>view/LaneView.js</source>
+			<source>view/LineView.js</source>
+			<source>view/AbstractMainView.js</source>
+			<source>view/ScrollContent.js</source>
+			<source>view/View.js</source>
+			<source>view/ZoomScroll.js</source>
+			<source>view/ModelDrawer.js</source>
+			
+			<source>view/elements/ElementText.js</source>
+			
+			<source>view/elements/lanes/LaneSizers.js</source>
+			<source>view/elements/lanes/AbstractLane.js</source>
+			<source>view/elements/lanes/PoolLane.js</source>
+			<source>view/elements/lanes/SwimLane.js</source>
+			<source>view/elements/lanes/BackElement.js</source>
+			<source>view/elements/lanes/GroupLane.js</source>
+        
+			
+			<source>view/elements/activities/ActivityElement.js</source>
+			<source>view/elements/activities/FlowElement.js</source>
+			
+			<source>view/elements/activities/TaskElement.js</source>
+			<source>view/elements/activities/CSubFlowElement.js</source>
+			
+			
+			<source>view/elements/events/EventElement.js</source>
+			<source>view/elements/events/StartEventElement.js</source>
+			<source>view/elements/events/MiddleEventElement.js</source>
+			<source>view/elements/events/EndEventElement.js</source>
+			
+			<source>view/elements/gateways/GatewayElement.js</source>
+			
+			<source>view/elements/artifacts/DataObject.js</source>
+			<source>view/elements/artifacts/TextAnnotation.js</source>
+			<source>view/elements/artifacts/DataInput.js</source>
+			<source>view/elements/artifacts/DataObject.js</source>
+			<source>view/elements/artifacts/DataOutput.js</source>
+			<source>view/elements/artifacts/DataStore.js</source>
+        
+			
+			<source>utils/DashLine.js</source>
+			<source>utils/LineUtils.js</source>
+			<source>view/elements/line/LineObject.js</source>
+			<source>view/elements/line/LineSegment.js</source>
+			<source>view/elements/line/LineVertex.js</source>
+			
+			<source>view/elements/MultiDrag.js</source>
+			
+			<source>controller/resources/AbstractResourceController.js</source>
+			<source>controller/resources/FormResources.js</source>
+			
+			
+			<source>labels/LabelManager.js</source>
+			<source>labels/LabelSet.js</source>
+        
+            
+		</file>
+		
+		<file name="../bin/facilis_JS.validation">			
+			<source>validation/rules/AbstractRule.js</source>
+			<source>validation/rules/ConnectionRule.js</source>
+			<source>validation/rules/DropInRule.js</source>
+			<source>validation/rules/DropRule.js</source>
+			<source>validation/RuleManager.js</source>
+		</file>
+			
+			
+		<file name="../bin/facilis_JS.parsers">
+			<source>parsers/input/ParserIn.js</source>
+			<source>parsers/input/elements/ElementParser.js</source>
+			
+			<source>parsers/input/elements/Activity.js</source>
+			<source>parsers/input/elements/ActivityElement.js</source>
+			<source>parsers/input/elements/Artifact.js</source>
+			<source>parsers/input/elements/Line.js</source>
+			<source>parsers/input/elements/Association.js</source>
+			<source>parsers/input/elements/Lane.js</source>
+			<source>parsers/input/elements/Gateway.js</source>
+			<source>parsers/input/elements/Pool.js</source>
+			<source>parsers/input/elements/Subflow.js</source>
+			<source>parsers/input/elements/Back.js</source>
+			<source>parsers/input/elements/Event.js</source>
+			<source>parsers/input/elements/Task.js</source>
+			<source>parsers/input/elements/WorkflowProcess.js</source>
+			<source>parsers/input/elements/Transition.js</source>
+		</file>
+		
+		<file name="../bin/facilis_JS.documentation">
+			<source>documentation/FacilisPDF.js</source>
+			<source>documentation/AbstractDocumentator.js</source>
+			<source>documentation/PdfDocumentGenerator.js</source>
+			<source>documentation/HtmlDocumentGenerator.js</source>
+            <source>documentation/PdfScoreGenerator.js</source>
+			<source>documentation/HtmlScoreGenerator.js</source>
+		</file>
+        
+		<file name="../bin/facilis_JS.game">
+			<source>game/view/GameOverrides.js</source>
+			<source>game/controller/GameController.js</source>
+			<source>game/controller/AudioManager.js</source>
+			<source>game/controller/GameItem.js</source>
+			<source>game/controller/GameModel.js</source>
+			<source>game/controller/ScoreCalculator.js</source>
+            <source>game/controller/HighScoreController.js</source>
+			<source>game/controller/WindowManager.js</source>
+			
+			<source>game/view/GamePanel.js</source>
+			<source>game/view/CountDownTimer.js</source>
+		</file>
+		
+		
+		<file name="../bin/facilis_JS.facilisModel">
+			<source>model/facilisModel/BaseModel.js</source>
+			<source>model/facilisModel/TextAnnotation.js</source>
+			<source>model/facilisModel/Task.js</source>
+			<source>model/facilisModel/SwimLane.js</source>
+			<source>model/facilisModel/StartEvent.js</source>
+			<source>model/facilisModel/Sflow.js</source>
+			<source>model/facilisModel/Pool.js</source>
+			<source>model/facilisModel/Performer.js</source>
+			<source>model/facilisModel/MiddleEvent.js</source>
+			<source>model/facilisModel/Mflow.js</source>
+			<source>model/facilisModel/Group.js</source>
+			<source>model/facilisModel/Gateway.js</source>
+			<source>model/facilisModel/Form.js</source>
+			<source>model/facilisModel/Event.js</source>
+			<source>model/facilisModel/ESubflow.js</source>
+			<source>model/facilisModel/EndEvent.js</source>
+			<source>model/facilisModel/DataStore.js</source>
+			<source>model/facilisModel/DataOutput.js</source>
+			<source>model/facilisModel/DataObject.js</source>
+			<source>model/facilisModel/DataInput.js</source>
+			<source>model/facilisModel/CSubflow.js</source>
+			<source>model/facilisModel/Back.js</source>
+			<source>model/facilisModel/Association.js</source>
+		</file>
+		
+		
+		<file name="../bin/facilis_JS.apiaModel">
+			<source>model/apiaModel/BaseModel.js</source>
+			<source>model/apiaModel/TextAnnotation.js</source>
+			<source>model/apiaModel/Task.js</source>
+			<source>model/apiaModel/SwimLane.js</source>
+			<source>model/apiaModel/StartEvent.js</source>
+			<source>model/apiaModel/Sflow.js</source>
+			<source>model/apiaModel/Pool.js</source>
+			<source>model/apiaModel/Performer.js</source>
+			<source>model/apiaModel/MiddleEvent.js</source>
+			<source>model/apiaModel/Mflow.js</source>
+			<source>model/apiaModel/Group.js</source>
+			<source>model/apiaModel/Gateway.js</source>
+			<source>model/apiaModel/Form.js</source>
+			<source>model/apiaModel/Event.js</source>
+			<source>model/apiaModel/ESubflow.js</source>
+			<source>model/apiaModel/EndEvent.js</source>
+			<source>model/apiaModel/DataStore.js</source>
+			<source>model/apiaModel/DataOutput.js</source>
+			<source>model/apiaModel/DataObject.js</source>
+			<source>model/apiaModel/DataInput.js</source>
+			<source>model/apiaModel/CSubflow.js</source>
+			<source>model/apiaModel/Back.js</source>
+			<source>model/apiaModel/Association.js</source>
+
+			<source>model/apiaModel/extras/Inmessageref.js</source>
+			<source>model/apiaModel/extras/Message.js</source>
+			<source>model/apiaModel/extras/Messageref.js</source>
+			<source>model/apiaModel/extras/Multimessage.js</source>
+			<source>model/apiaModel/extras/Multiple.js</source>
+			<source>model/apiaModel/extras/Multitimer.js</source>
+			<source>model/apiaModel/extras/Outmessageref.js</source>
+			<source>model/apiaModel/extras/Receive.js</source>
+			<source>model/apiaModel/extras/Send.js</source>
+			<source>model/apiaModel/extras/Service.js</source>
+			<source>model/apiaModel/extras/Timeattribute.js</source>
+			<source>model/apiaModel/extras/Timecycle.js</source>
+			<source>model/apiaModel/extras/Timedate.js</source>
+			<source>model/apiaModel/extras/Timer.js</source>
+			<source>model/apiaModel/extras/Transactionref.js</source>
+			<source>model/apiaModel/extras/User.js</source>
+		</file>
+		
+        
+	</output>
+</build>

@@ -1,0 +1,41 @@
+<div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Documentation
+		</div>
+		<div>
+			<input name="documentation" ng-model="selectedElement.documentation"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Name
+		</div>
+		<div>
+			<input name="name" ng-model="selectedElement.name"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="selectedElement.gatewaytype=='Exclusive'" ng-hide="selectedElement.gatewaytype=='Inclusive' && selectedElement.gatewaytype=='Parallel' && selectedElement.gatewaytype=='Event'">
+		<div class="col-md-2">
+			ExclusiveType
+		</div>
+		<div>
+			<input name="exclusivetype" ng-model="selectedElement.exclusivetype"></input>
+		</div>
+	</div>Data
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			GatewayType
+		</div>
+		<div>
+			<select name="gatewaytype" ng-model="selectedElement.gatewaytype"><option  selected  value="Exclusive">Exclusive</option><option  value="Inclusive">Inclusive</option><option  value="Parallel">Parallel</option><option  value="Event">Event</option></select>
+		</div>
+	</div>Exclusive
+	<div class="row" ng-show="" ng-hide="selectedElement.gatewaytype=='Exclusive' && selectedElement.gatewaytype=='Inclusive' && selectedElement.gatewaytype=='Parallel' && selectedElement.gatewaytype=='Event'">
+		<div class="col-md-2">
+			Instantiate
+		</div>
+		<div>
+			<input name="instantiate" ng-model="selectedElement.instantiate"></input>
+		</div>
+	</div>false</div>

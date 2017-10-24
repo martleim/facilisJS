@@ -1,0 +1,97 @@
+<div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Documentation
+		</div>
+		<div>
+			<input name="documentation" ng-model="selectedElement.documentation"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Name
+		</div>
+		<div>
+			<input name="nameChooser" ng-model="selectedElement.nameChooser"></input>
+		</div>
+	</div>DEFAULT_TASK
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='Manual' && selectedElement.taskType=='Script' && selectedElement.taskType=='BusinessRule'" ng-hide="selectedElement.taskType=='User'">
+		<div class="col-md-2">
+			Name
+		</div>
+		<div>
+			<input name="name" ng-model="selectedElement.name"></input>
+		</div>
+	</div>DEFAULT_TASK
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Color
+		</div>
+		<div>
+			<input name="colorFill" ng-model="selectedElement.colorFill" type="color"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			TaskType
+		</div>
+		<div>
+			<select name="taskType" ng-model="selectedElement.taskType"><option  value="None">None</option><option  value="Service">Service</option><option  value="Receive">Receive</option><option  value="Send">Send</option><option  selected  value="User">User</option><option  value="Manual">Manual</option><option  value="Script">Script</option><option  value="BusinessRule">Business Rule</option></select>
+		</div>
+	</div>User
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='Send' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual' && selectedElement.taskType=='Script' && selectedElement.taskType=='BusinessRule'" ng-hide="selectedElement.taskType=='Service' && selectedElement.taskType=='Receive'">
+		<div class="col-md-2">
+			LoopType
+		</div>
+		<div>
+			<select name="looptype" ng-model="selectedElement.looptype"><option  selected  value="None">None</option><option  value="MultiInstance">MultiInstance</option></select>
+		</div>
+	</div>None
+	<div class="row" ng-show="selectedElement.looptype=='MultiInstance'" ng-hide="selectedElement.looptype=='None'">
+		<div class="col-md-2">
+			MI_Condition
+		</div>
+		<div>
+			<input name="mi_condition" ng-model="selectedElement.mi_condition"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			skipcondition
+		</div>
+		<div>
+			<input name="skipcondition" ng-model="selectedElement.skipcondition"></input>
+		</div>
+	</div>
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual' && selectedElement.taskType=='BusinessRule'" ng-hide="selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Performers
+		</div>
+		<div>
+			<input name="performers" ng-model="selectedElement.performers"></input>
+		</div>
+	</div><div></div>
+	<div class="row" ng-show="selectedElement.taskType=='None' && selectedElement.taskType=='User' && selectedElement.taskType=='Manual' && selectedElement.taskType=='BusinessRule'" ng-hide="selectedElement.taskType=='Service' && selectedElement.taskType=='Receive' && selectedElement.taskType=='Send' && selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Forms
+		</div>
+		<div>
+			<input name="forms" ng-model="selectedElement.forms"></input>
+		</div>
+	</div>{}; ////Forms
+	<div class="row" ng-show="selectedElement.taskType=='Script'" ng-hide="selectedElement.taskType=='Script'">
+		<div class="col-md-2">
+			Events
+		</div>
+		<div>
+			<input name="events" ng-model="selectedElement.events"></input>
+		</div>
+	</div><div></div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			FirstTask
+		</div>
+		<div>
+			<input name="firsttask" ng-model="selectedElement.firsttask"></input>
+		</div>
+	</div>"false"</div>

@@ -1,0 +1,24 @@
+{
+    "jscodehints.detectedExclusions": [
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/facilis.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/view/ZoomScroll.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/labels/LabelManager.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/view/View.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/parsers/input/ParserIn.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/parsers/input/elements/Task.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/SpriteStage.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/view/elements/activities/CSubFlowElement.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/view/elements/activities/TaskElement.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/SpriteContainer.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/Shape3D.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/game/controller/GameController.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/Gruntfile.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/facilis_JS.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/game/controller/GameItem.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/view/elements/events/EventElement.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/CustomShape.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/game/controller/WindowManager.js",
+        "jsPDF.js",
+        "E:/Development/zwamp/vdrive/web/FacilisJS/src/view/ScrollContent.js"
+    ]
+}

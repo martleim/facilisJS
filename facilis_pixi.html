@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <!--script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="libs/jquery.ui.touch-punch.min.js"></script>
+        
+        <!-- Latest compiled and minified CSS 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="screen">
+        <!-- Optional theme 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" media="screen">
+        <!-- Latest compiled and minified JavaScript 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        -->
+        <!--script src="http://code.createjs.com/createjs-2014.12.12.min.js"></script-->
+        <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+        
+		<link rel="stylesheet" href="facilis.css" />
+		
+        <!--script src="libs/jspdf/require.js"></script-->
+        <script src="libs/jspdf/jspdf.js"></script>
+        <script src="libs/rasterize/rasterizeHTML.allinone.js"></script>
+		
+		<script src="libs/pixi.js"></script>
+        
+		<script src="src/facilis.js"></script>
+        
+        <script src="src/wrappers/pixi/Ticker.js"></script>
+        <script src="src/wrappers/pixi/Event.js"></script>
+        <script src="src/wrappers/pixi/EventDispatcher.js"></script>
+        <script src="src/wrappers/pixi/Point.js"></script>
+        <script src="src/wrappers/pixi/Container.js"></script>
+        <script src="src/wrappers/pixi/Graphics.js"></script>
+        <script src="src/wrappers/pixi/Shape.js"></script>
+        <script src="src/wrappers/pixi/Rectangle.js"></script>
+        <script src="src/wrappers/pixi/Sprite.js"></script>
+        <script src="src/wrappers/pixi/SpriteSheet.js"></script>
+        <script src="src/wrappers/pixi/Shadow.js"></script>
+        <script src="src/wrappers/pixi/Text.js"></script>
+		
+		
+		
+		<!--script language="javascript" src="src/model/apiaModel/BaseModel.js"></script>
+		<script language="javascript" src="src/model/apiaModel/TextAnnotation.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Task.js"></script>
+		<script language="javascript" src="src/model/apiaModel/SwimLane.js"></script>
+		<script language="javascript" src="src/model/apiaModel/StartEvent.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Sflow.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Pool.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Performer.js"></script>
+		<script language="javascript" src="src/model/apiaModel/MiddleEvent.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Mflow.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Group.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Gateway.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Form.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Event.js"></script>
+		<script language="javascript" src="src/model/apiaModel/ESubflow.js"></script>
+		<script language="javascript" src="src/model/apiaModel/EndEvent.js"></script>
+		<script language="javascript" src="src/model/apiaModel/DataStore.js"></script>
+		<script language="javascript" src="src/model/apiaModel/DataOutput.js"></script>
+		<script language="javascript" src="src/model/apiaModel/DataObject.js"></script>
+		<script language="javascript" src="src/model/apiaModel/DataInput.js"></script>
+		<script language="javascript" src="src/model/apiaModel/CSubflow.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Back.js"></script>
+		<script language="javascript" src="src/model/apiaModel/Association.js"></script>
+		
+		<script language="javascript" src="src/model/apiaModel/extras/Inmessageref.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Message.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Messageref.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Multimessage.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Multiple.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Multitimer.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Outmessageref.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Receive.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Send.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Service.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Timeattribute.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Timecycle.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Timedate.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Timer.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/Transactionref.js"></script>
+		<script language="javascript" src="src/model/apiaModel/extras/User.js"></script-->
+		
+
+		<script language="javascript" src="src/model/facilisModel/BaseModel.js"></script>
+		<script language="javascript" src="src/model/facilisModel/TextAnnotation.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Task.js"></script>
+		<script language="javascript" src="src/model/facilisModel/SwimLane.js"></script>
+		<script language="javascript" src="src/model/facilisModel/StartEvent.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Sflow.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Pool.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Performer.js"></script>
+		<script language="javascript" src="src/model/facilisModel/MiddleEvent.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Mflow.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Group.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Gateway.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Form.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Event.js"></script>
+		<script language="javascript" src="src/model/facilisModel/ESubflow.js"></script>
+		<script language="javascript" src="src/model/facilisModel/EndEvent.js"></script>
+		<script language="javascript" src="src/model/facilisModel/DataStore.js"></script>
+		<script language="javascript" src="src/model/facilisModel/DataOutput.js"></script>
+		<script language="javascript" src="src/model/facilisModel/DataObject.js"></script>
+		<script language="javascript" src="src/model/facilisModel/DataInput.js"></script>
+		<script language="javascript" src="src/model/facilisModel/CSubflow.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Back.js"></script>
+		<script language="javascript" src="src/model/facilisModel/Association.js"></script>
+
+        <script src="src/view/BaseElement.js"></script>
+        
+        <script src="src/utils/Key.js"></script>
+        
+        <script src="src/view/IconManager.js"></script>
+        
+        <script src="src/view/elements/AbstractElement.js"></script>
+        <script src="src/view/elements/SizableElement.js"></script>
+        <script src="src/view/elements/Drag.js"></script>
+        <script src="src/view/elements/Sizer.js"></script>
+        <script src="src/view/elements/Sizable.js"></script>
+        <script src="src/view/elements/Element.js"></script>
+        <script src="src/view/elements/DropInElement.js"></script>
+        
+        <script src="src/view/ElementAttributeController.js"></script>
+        <script src="src/view/MultiSelect.js"></script>
+        
+        <script src="src/view/AbstractView.js"></script>
+        <script src="src/view/ElementView.js"></script>
+        <script src="src/view/LaneView.js"></script>
+        <script src="src/view/LineView.js"></script>
+        <script src="src/view/AbstractMainView.js"></script>
+        <script src="src/view/ScrollContent.js"></script>
+        <script src="src/view/View.js"></script>
+        <script src="src/view/ZoomScroll.js"></script>
+        
+		<script src="src/validation/rules/AbstractRule.js"></script>
+		<script src="src/validation/rules/ConnectionRule.js"></script>
+		<script src="src/validation/rules/DropInRule.js"></script>
+		<script src="src/validation/rules/DropRule.js"></script>
+		<script src="src/validation/RuleManager.js"></script>
+        
+		<script src="src/view/ModelDrawer.js"></script>
+        
+        <script src="src/view/elements/ElementText.js"></script>
+        
+        <script src="src/view/elements/lanes/LaneSizers.js"></script>
+        <script src="src/view/elements/lanes/AbstractLane.js"></script>
+        <script src="src/view/elements/lanes/PoolLane.js"></script>
+        <script src="src/view/elements/lanes/SwimLane.js"></script>
+		<script src="src/view/elements/lanes/BackElement.js"></script>
+		<script src="src/view/elements/lanes/GroupLane.js"></script>
+        
+        <script src="src/view/elements/activities/ActivityElement.js"></script>
+        <script src="src/view/elements/activities/FlowElement.js"></script>
+        
+        <script src="src/view/elements/activities/TaskElement.js"></script>
+        <script src="src/view/elements/activities/CSubFlowElement.js"></script>
+        
+        
+        <script src="src/view/elements/events/EventElement.js"></script>
+        <script src="src/view/elements/events/StartEventElement.js"></script>
+        <script src="src/view/elements/events/MiddleEventElement.js"></script>
+        <script src="src/view/elements/events/EndEventElement.js"></script>
+        
+        <script src="src/view/elements/gateways/GatewayElement.js"></script>
+        
+        <script src="src/view/elements/artifacts/DataObject.js"></script>
+        <script src="src/view/elements/artifacts/TextAnnotation.js"></script>
+		<script src="src/view/elements/artifacts/DataInput.js"></script>
+		<script src="src/view/elements/artifacts/DataObject.js"></script>
+		<script src="src/view/elements/artifacts/DataOutput.js"></script>
+		<script src="src/view/elements/artifacts/DataStore.js"></script>
+        
+        <script src="src/utils/DashLine.js"></script>
+        <script src="src/utils/LineUtils.js"></script>
+        <script src="src/view/elements/line/LineObject.js"></script>
+        <script src="src/view/elements/line/LineSegment.js"></script>
+        <script src="src/view/elements/line/LineVertex.js"></script>
+        
+        <script src="src/parsers/input/ParserIn.js"></script>
+        <script src="src/parsers/input/elements/ElementParser.js"></script>
+        
+        <script src="src/parsers/input/elements/Activity.js"></script>
+        <script src="src/parsers/input/elements/ActivityElement.js"></script>
+        <script src="src/parsers/input/elements/Artifact.js"></script>
+        <script src="src/parsers/input/elements/Line.js"></script>
+        <script src="src/parsers/input/elements/Association.js"></script>
+        <script src="src/parsers/input/elements/Lane.js"></script>
+        <script src="src/parsers/input/elements/Gateway.js"></script>
+        <script src="src/parsers/input/elements/Pool.js"></script>
+        <script src="src/parsers/input/elements/Subflow.js"></script>
+        <script src="src/parsers/input/elements/Back.js"></script>
+        <script src="src/parsers/input/elements/Event.js"></script>
+        <script src="src/parsers/input/elements/Task.js"></script>
+        <script src="src/parsers/input/elements/WorkflowProcess.js"></script>
+        <script src="src/parsers/input/elements/Transition.js"></script>
+        
+        <script src="src/controller/resources/AbstractResourceController.js"></script>
+        <script src="src/controller/resources/FormResources.js"></script>
+        
+        
+        <script src="src/labels/LabelManager.js"></script>
+        <script src="src/labels/LabelSet.js"></script>
+        
+        <script src="src/documentation/FacilisPDF.js"></script>
+        <script src="src/documentation/AbstractDocumentator.js"></script>
+        <script src="src/documentation/PdfDocumentGenerator.js"></script>
+        <script src="src/documentation/PdfScoreGenerator.js"></script>
+        
+        
+        <script src="facilis.js"></script>
+		
+		<!-- angular -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/providers/facilisConfig.js"></script>
+		
+		<script src="app/services/facilisService.js"></script>
+		<script src="app/controllers/elementPropertiesController.js"></script>
+		<script src="app/controllers/fileActionsController.js"></script>
+		
+		<script src="app/directives/fileActions.js"></script>
+		<script src="app/directives/elementProperties.js"></script>
+		        
+        <style>
+        
+            @-moz-document url-prefix() {
+                canvas {
+                    background-color: white;
+                }
+            }
+            
+        </style>
+
+    </head>
+    <body onload="init()" style="overflow:hidden"  ng-app="facilisApp">
+    
+        <canvas id="facilisCanvas" width="1000" height="600"></canvas>
+        <fileactions></fileactions>
+		<elementproperties ng-controller="ElementPropertiesController"></elementproperties>
+    </body>
+</html>

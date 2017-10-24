@@ -1,0 +1,25 @@
+fileactions > div {
+	display:  table-row;
+}
+
+fileactions > div > div {
+	display: table-cell;
+	padding: 5px;
+	border:1px solid black;
+}
+
+fileactions > div > div  > input[type="file"]{
+	width:50px;
+}
+
+elementproperties > div {
+	position: absolute;
+	top:10px;
+	height: 450px;
+	width:200px;
+	z-index: 999999999;
+	overflow: auto;
+	left:100%;
+	margin-left:-210px;
+	border:1px solid black;
+}

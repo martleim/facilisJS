@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        
+        <script src="http://code.createjs.com/createjs-2014.12.12.min.js"></script>
+        <script src="pixi.js"></script>
+        
+        <script src="jspdf.min.js"></script>
+        
+		<script src="src/facilis.js"></script>
+        
+        <script src="src/wrappers/pixi/Ticker.js"></script>
+        <script src="src/wrappers/pixi/Event.js"></script>
+        <script src="src/wrappers/pixi/EventDispatcher.js"></script>
+        <script src="src/wrappers/pixi/Point.js"></script>
+        <script src="src/wrappers/pixi/Container.js"></script>
+        <script src="src/wrappers/pixi/Graphics.js"></script>
+        <script src="src/wrappers/pixi/Shape.js"></script>
+        <script src="src/wrappers/pixi/Sprite.js"></script>
+        <script src="src/wrappers/pixi/SpriteSheet.js"></script>
+        <script src="src/wrappers/pixi/Shadow.js"></script>
+        <script src="src/wrappers/pixi/Text.js"></script>
+        <script src="src/wrappers/pixi/Rectangle.js"></script>
+        
+        <script src="src/view/BaseElement.js"></script>
+        
+        <script src="Shape3D.js"></script>
+        
+        <script src="src/utils/Key.js"></script>
+        
+        <script src="src/view/IconManager.js"></script>
+        
+        <script src="src/view/elements/AbstractElement.js"></script>
+        <script src="src/view/elements/SizableElement.js"></script>
+        <script src="src/view/elements/Drag.js"></script>
+        <script src="src/view/elements/Sizer.js"></script>
+        <script src="src/view/elements/Sizable.js"></script>
+        <script src="src/view/elements/Element.js"></script>
+        <script src="src/view/elements/DropInElement.js"></script>
+        
+        <script src="src/view/ElementAttributeController.js"></script>
+        <script src="src/view/MultiSelect.js"></script>
+        
+        <script src="src/view/AbstractView.js"></script>
+        <script src="src/view/ElementView.js"></script>
+        <script src="src/view/LaneView.js"></script>
+        <script src="src/view/LineView.js"></script>
+        <script src="src/view/AbstractMainView.js"></script>
+        <script src="src/view/ScrollContent.js"></script>
+        <script src="src/view/View.js"></script>
+        <script src="src/view/ZoomScroll.js"></script>
+        <script src="src/validation/RuleManager.js"></script>
+        <script src="src/view/ModelDrawer.js"></script>
+        
+        <script src="src/view/elements/ElementText.js"></script>
+        
+        <script src="src/view/elements/lanes/LaneSizers.js"></script>
+        <script src="src/view/elements/lanes/AbstractLane.js"></script>
+        <script src="src/view/elements/lanes/PoolLane.js"></script>
+        <script src="src/view/elements/lanes/SwimLane.js"></script>
+        
+        <script src="src/view/elements/activities/ActivityElement.js"></script>
+        <script src="src/view/elements/activities/FlowElement.js"></script>
+        
+        <script src="src/view/elements/activities/TaskElement.js"></script>
+        <script src="src/view/elements/activities/CSubFlowElement.js"></script>
+        
+        
+        <script src="src/view/elements/events/EventElement.js"></script>
+        <script src="src/view/elements/events/StartEventElement.js"></script>
+        <script src="src/view/elements/events/MiddleEventElement.js"></script>
+        <script src="src/view/elements/events/EndEventElement.js"></script>
+        
+        <script src="src/view/elements/gateways/GatewayElement.js"></script>
+        
+        <script src="src/view/elements/artifacts/DataObject.js"></script>
+        <script src="src/view/elements/artifacts/TextAnnotation.js"></script>
+        
+        <script src="src/utils/DashLine.js"></script>
+        <script src="src/utils/LineUtils.js"></script>
+        <script src="src/view/elements/line/LineObject.js"></script>
+        <script src="src/view/elements/line/LineSegment.js"></script>
+        <script src="src/view/elements/line/LineVertex.js"></script>
+        
+        <script src="src/parsers/input/ParserIn.js"></script>
+        <script src="src/parsers/input/elements/ElementParser.js"></script>
+        
+        <script src="src/parsers/input/elements/Activity.js"></script>
+        <script src="src/parsers/input/elements/ActivityElement.js"></script>
+        <script src="src/parsers/input/elements/Artifact.js"></script>
+        <script src="src/parsers/input/elements/Association.js"></script>
+        <script src="src/parsers/input/elements/Lane.js"></script>
+        <script src="src/parsers/input/elements/Gateway.js"></script>
+        <script src="src/parsers/input/elements/Pool.js"></script>
+        <script src="src/parsers/input/elements/Subflow.js"></script>
+        <script src="src/parsers/input/elements/Back.js"></script>
+        <script src="src/parsers/input/elements/Event.js"></script>
+        <script src="src/parsers/input/elements/Task.js"></script>
+        <script src="src/parsers/input/elements/WorkflowProcess.js"></script>
+        <script src="src/parsers/input/elements/Line.js"></script>
+        <script src="src/parsers/input/elements/Transition.js"></script>
+        
+        <script src="src/controller/resources/AbstractResourceController.js"></script>
+        <script src="src/controller/resources/FormResources.js"></script>
+        
+        
+        <script src="src/labels/LabelManager.js"></script>
+        <script src="src/labels/LabelSet.js"></script>
+        
+        <script src="src/documentation/FacilisPDF.js"></script>
+        <script src="src/documentation/AbstractDocumentator.js"></script>
+        <script src="src/documentation/PdfDocumentGenerator.js"></script>
+        
+        
+        <script src="src/game/view/GameOverrides.js"></script>
+        <script src="src/game/controller/GameController.js"></script>
+        <script src="src/game/controller/AudioManager.js"></script>
+        <script src="src/game/controller/GameItem.js"></script>
+        <script src="src/game/controller/GameModel.js"></script>
+        <script src="src/game/controller/ScoreCalculator.js"></script>
+        <script src="src/game/controller/WindowManager.js"></script>
+        
+        <script src="src/game/view/GamePanel.js"></script>
+        <script src="src/game/view/CountDownTimer.js"></script>
+        
+        <script src="pixi_game.js"></script>
+        
+        
+        
+        
+    </head>
+    <body onload="init()">
+    
+        <!--canvas id="facilisCanvas" width="1000" height="600"></canvas-->
+        
+    </body>
+</html>

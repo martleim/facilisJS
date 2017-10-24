@@ -1,0 +1,81 @@
+<div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Documentación
+		</div>
+		<div>
+			<input name="documentation" ng-model="selectedElement.documentation"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Nombre
+		</div>
+		<div>
+			<input name="name" ng-model="selectedElement.name"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="selectedElement.gatewaytype=='Exclusive'" ng-hide="selectedElement.gatewaytype=='Inclusive' && selectedElement.gatewaytype=='Parallel' && selectedElement.gatewaytype=='Event'">
+		<div class="col-md-2">
+			ExclusiveType
+		</div>
+		<div>
+			<input name="exclusivetype" ng-model="selectedElement.exclusivetype"></input>
+		<div>
+	</div>Data
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			Tipo
+		</div>
+		<div>
+			<select name="gatewaytype" ng-model="selectedElement.gatewaytype"><option  selected  value="Exclusive">Exclusive</option><option  value="Inclusive">Inclusive</option><option  value="Parallel">Parallel</option><option  value="Event">Event</option></select>
+		<div>
+	</div>Exclusive
+	<div class="row" ng-show="" ng-hide="selectedElement.gatewaytype=='Exclusive' && selectedElement.gatewaytype=='Inclusive' && selectedElement.gatewaytype=='Parallel' && selectedElement.gatewaytype=='Event'">
+		<div class="col-md-2">
+			Instantiate
+		</div>
+		<div>
+			<input name="instantiate" ng-model="selectedElement.instantiate"></input>
+		<div>
+	</div>false
+	<div class="row" ng-show="" ng-hide="selectedElement.gatewaytype=='Exclusive' && selectedElement.gatewaytype=='Inclusive' && selectedElement.gatewaytype=='Parallel' && selectedElement.gatewaytype=='Event'">
+		<div class="col-md-2">
+			IncomingCondition
+		</div>
+		<div>
+			<input name="incomingcondition" ng-model="selectedElement.incomingcondition"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="selectedElement.gatewaytype=='Exclusive' && selectedElement.gatewaytype=='Inclusive' && selectedElement.gatewaytype=='Parallel' && selectedElement.gatewaytype=='Event'">
+		<div class="col-md-2">
+			OutgoingCondition
+		</div>
+		<div>
+			<input name="outgoingcondition" ng-model="selectedElement.outgoingcondition"></input>
+		<div>
+	</div>
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			MarkerVisible
+		</div>
+		<div>
+			<input name="markervisible" ng-model="selectedElement.markervisible"></input>
+		<div>
+	</div>true
+	<div class="row" ng-show="selectedElement.gatewaytype=='Exclusive' && selectedElement.gatewaytype=='Inclusive'" ng-hide="selectedElement.gatewaytype=='Parallel' && selectedElement.gatewaytype=='Event'">
+		<div class="col-md-2">
+			Tipo de ejecución
+		</div>
+		<div>
+			<select name="executiontype" ng-model="selectedElement.executiontype"><option  selected  value="Automatic">Automatic</option><option  value="Manual">Manual</option></select>
+		<div>
+	</div>Automatic
+	<div class="row" ng-show="" ng-hide="">
+		<div class="col-md-2">
+			User Attributes
+		</div>
+		<div>
+			<input name="userattributes" ng-model="selectedElement.userattributes"></input>
+		<div>
+	</div><div></div></div>

@@ -1,0 +1,115 @@
+
+<div style="text-align:center;">
+    
+    <style>
+        
+        @font-face {
+            font-family: PassingNotes;
+            src: url(gameAssets/pass_notes.ttf);
+        }
+        
+		#htmlDocumentation {
+			height: 500px;
+			overflow: auto;
+		}
+		
+		#htmlDocumentation *{
+			text-align: left;
+		}
+		
+		.docImage{
+			width:100%;
+		}
+		
+		
+		
+    </style>
+    <script>
+		var htmlScoreGen;
+        function setInitScreen(){
+        	var htmlScoreGen = new facilis.documentation.HtmlScoreGenerator();
+			
+			htmlScoreGen.addEventListener(facilis.documentation.HtmlScoreGenerator.DOC_READY,function(){
+				$("#htmlDocumentation").append(htmlScoreGen.getGeneratedHtml());//.html(htmlDocGenerator);
+			});
+			
+			htmlScoreGen.generateScoreHtml(facilis.game.ScoreCalculator.userName,$("#scoreScreen")[0],facilis.game.ScoreCalculator.details);
+			
+			
+        }
+        
+		function closeMe(el){
+			facilis.game.WindowManager.getInstance().closeModal($(el).attr("modalId"));
+		}
+		
+		function printDocumentation(){
+			
+			var url='data:text/csv;charset=UTF-8,' + '\uFEFF' + $("#htmlDocumentation").html();
+			
+			if(isFF() || isIE() ){
+				var win = window.open('', '', 'height=300,width=300');
+				win.document.write($("#htmlDocumentation").html());
+				
+				var script=win.document.createElement("script");
+				script.innerHTML="function selfPrint(){  try{window.focus();window.print();}catch(e){alert(e.message)}  }";
+				win.document.body.appendChild(script);
+				win.document.close();
+				
+				win.selfPrint();
+				win.close();
+			}else{
+				
+				var iframe = document.createElement("iframe");
+				iframe.name="framePrint";
+				iframe.id="framePrint";
+				document.body.appendChild(iframe);
+				pri=iframe.contentWindow;
+				var doc= pri.document;
+				doc.open();
+				doc.write($("#htmlDocumentation").html());
+				doc.close();
+				
+				pri.focus();
+				pri.print();
+				document.body.removeChild(iframe);
+				
+			}
+			
+			
+		}
+		
+		function generatePdf(){
+			var pdfScoreGen = new facilis.documentation.PdfScoreGenerator();
+			pdfScoreGen.saveScorePDF(facilis.game.ScoreCalculator.userName,$("#scoreScreen")[0],facilis.game.ScoreCalculator.details);
+		}
+		
+		function generateHtml(){
+			if(isIE()){
+				var blob = new Blob([$("#htmlDocumentation").html()], {type: 'text/csv'});
+				window.navigator.msSaveBlob(blob, "Documentation.html");
+			}else{
+				var url='data:text/csv;charset=UTF-8,' + '\uFEFF' + $("#htmlDocumentation").html();
+
+				var aLink = document.createElement('a');
+				document.body.appendChild(aLink);
+				var evt = document.createEvent("HTMLEvents");
+				evt.initEvent("click", true, true);
+				aLink.download = "Score.html";
+				aLink.href = url;
+				//aLink.dispatchEvent(evt);
+				aLink.click();
+				document.body.removeChild(aLink);
+			}
+		}
+		
+		setInitScreen();
+        
+    </script>
+    
+<div id="htmlDocumentation">
+
+</div>
+
+</div>
+
+      
